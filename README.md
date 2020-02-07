@@ -7,7 +7,7 @@ Theseus BERT is a new compressed BERT by progressively replacing the components 
 
 ## Load Pretrained Model on MNLI
 
-We provide a pretrained model, which outperforms DistillBERT on seven tasks of BERT.
+We provide a pretrained model, which outperforms DistillBERT on six tasks of BERT.
 
 | Method          | MNLI | MRPC | QNLI | QQP  | RTE  | SST-2 | STS-B |
 |-----------------|------|------|------|------|------|-------|-------|
