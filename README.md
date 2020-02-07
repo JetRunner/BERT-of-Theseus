@@ -1,4 +1,27 @@
 # BERT-of-Theseus
-Code for paper "BERT-of-Theseus: Compressing BERT by Progressive Module Replacing"
+Code for paper "BERT-of-Theseus: Compressing BERT by Progressive Module Replacing".
+
+Theseus BERT is a new compressed BERT by progressively replacing the components of a BERT.
 
 ![BERT of Theseus](https://github.com/JetRunner/BERT-of-Theseus/blob/master/bert-of-theseus.png?raw=true)
+
+## Load Pretrained Model on MNLI
+
+We provide a pretrained model, which outperforms DistillBERT on seven tasks of BERT.
+
+| Method          | MNLI | MRPC | QNLI | QQP  | RTE  | SST-2 | STS-B |
+|-----------------|------|------|------|------|------|-------|-------|
+| BERT-base       | 83.5 | 89.5 | 91.2 | 89.8 | 71.1 | 91.5  | 88.9  |
+| DistillBERT     | 79.0 | 87.5 | 85.3 | 84.9 | 59.9 | 90.7  | 81.2  |
+| BERT-of-Theseus | 82.1 | 87.5 | 88.8 | 88.8 | 70.1 | 91.8  | 87.8  |
+
+```python
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("canwenxu/BERT-of-Theseus-MNLI")
+
+model = AutoModel.from_pretrained("canwenxu/BERT-of-Theseus-MNLI")
+
+```
+
+**Code coming soon!**
