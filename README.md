@@ -7,7 +7,7 @@ Theseus BERT is a new compressed BERT by progressively replacing the components 
 
 ## Load Pretrained Model on MNLI
 
-We provide a pretrained model on MNLI, which can transfer to other sentence classification tasks, outperforming DistillBERT on six tasks of BERT.
+We provide a pretrained model on MNLI, which can transfer to other sentence classification tasks, outperforming DistillBERT on six tasks of GLUE.
 
 | Method          | MNLI | MRPC | QNLI | QQP  | RTE  | SST-2 | STS-B |
 |-----------------|------|------|------|------|------|-------|-------|
