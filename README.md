@@ -15,6 +15,8 @@ We provide a pretrained model on MNLI, which can transfer to other sentence clas
 | DistillBERT     | 79.0 | 87.5 | 85.3 | 84.9 | 59.9 | 90.7  | 81.2  |
 | BERT-of-Theseus | 82.1 | 87.5 | 88.8 | 88.8 | 70.1 | 91.8  | 87.8  |
 
+You can easily load our general-purpose model using [huggingface/transformers](https://github.com/huggingface/transformers).
+
 ```python
 from transformers import AutoTokenizer, AutoModel
 
