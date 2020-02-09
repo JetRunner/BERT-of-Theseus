@@ -1,7 +1,7 @@
 # BERT-of-Theseus
 Code for paper "BERT-of-Theseus: Compressing BERT by Progressive Module Replacing".
 
-Theseus BERT is a new compressed BERT by progressively replacing the components of a BERT.
+ BERT-of-Theseus is a new compressed BERT by progressively replacing the components of the original BERT.
 
 ![BERT of Theseus](https://github.com/JetRunner/BERT-of-Theseus/blob/master/bert-of-theseus.png?raw=true)
 
