@@ -84,4 +84,5 @@ model = AutoModel.from_pretrained("canwenxu/BERT-of-Theseus-MNLI")
 
 ```
 
-**Code coming soon!**
+## Bug Report and Contribution
+If you'd like to contribute and add more tasks (only GLUE is available at this moment), please submit a pull request and contact me. Also, if you find any problem or bug, please report with an issue. Thanks!
