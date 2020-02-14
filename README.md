@@ -11,7 +11,7 @@ Code for paper ["BERT-of-Theseus: Compressing BERT by Progressive Module Replaci
 Our code is built on [huggingface/transformers](https://github.com/huggingface/transformers). To use our code, you must clone and install [huggingface/transformers](https://github.com/huggingface/transformers).
 
 ### Compress a BERT
-1. You should train a predecessor model following the [instruction from huggingface](https://github.com/huggingface/transformers/tree/master/examples#glue) and then save it to a directory if you haven't done so.
+1. You should fine-tune a predecessor model following the [instruction from huggingface](https://github.com/huggingface/transformers/tree/master/examples#glue) and then save it to a directory if you haven't done so.
 2. Run compression following the examples below:
 ```bash
 # For compression with a replacement scheduler
@@ -61,7 +61,7 @@ python ./run_glue.py \
   --replacing_rate 0.7 \
   --steps_for_replacing 2500 
 ```
-For the detailed description of parameters, please refer to the source code.
+For the detailed description of arguments, please refer to the source code.
 
 ## Load Pretrained Model on MNLI
 
