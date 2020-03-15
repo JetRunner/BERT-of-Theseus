@@ -86,3 +86,8 @@ model = AutoModel.from_pretrained("canwenxu/BERT-of-Theseus-MNLI")
 
 ## Bug Report and Contribution
 If you'd like to contribute and add more tasks (only GLUE is available at this moment), please submit a pull request and contact me. Also, if you find any problem or bug, please report with an issue. Thanks!
+
+## Third-Party Implementations
+We list some third-party implementations from the community here. Please kindly add your implementation to this list:
+
+`Tensorflow Implementation (tested on NER)`: https://github.com/qiufengyuyi/bert-of-theseus-tf
