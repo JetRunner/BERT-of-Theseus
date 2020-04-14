@@ -4,7 +4,7 @@ This script (by @MichaelZhouwang) is for predicting with [huggingface/transforme
 
 It helps you prepare your submission to [GLUE Leaderboard](https://gluebenchmark.com/).
 
-If you find this script helpful, please consider cite our paper:
+If you find this script helpful, please kindly consider citing our paper:
 
 ```bibtex
 @misc{xu2020bertoftheseus,
