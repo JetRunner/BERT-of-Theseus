@@ -18,6 +18,8 @@ If you use this code in your research, please cite our paper:
 }
 ```
 
+**NEW:** We have uploaded a script for making prediction on GLUE tasks and preparing for leaderboard submission. Check out [here](https://github.com/JetRunner/BERT-of-Theseus/tree/master/glue_script)!
+
 ## How to run BERT-of-Theseus
 
 ### Requirement
