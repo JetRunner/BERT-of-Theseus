@@ -1,6 +1,6 @@
 # GLUE Submission Script
 
-This script (by @MichaelZhouwang) is for predicting with [huggingface/transformers](https://github.com/huggingface/transformers) on GLUE test set.
+This script (by [@MichaelZhouwang](https://github.com/MichaelZhouwang)) is for predicting with [huggingface/transformers](https://github.com/huggingface/transformers) on GLUE test set.
 
 It helps you prepare your submission to [GLUE Leaderboard](https://gluebenchmark.com/).
 
