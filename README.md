@@ -5,6 +5,19 @@ Code for paper ["BERT-of-Theseus: Compressing BERT by Progressive Module Replaci
 
 ![BERT of Theseus](https://github.com/JetRunner/BERT-of-Theseus/blob/master/bert-of-theseus.png?raw=true)
 
+## Citation
+If you use this code in your research, please cite our paper:
+```bibtex
+@misc{xu2020bertoftheseus,
+    title={BERT-of-Theseus: Compressing BERT by Progressive Module Replacing},
+    author={Canwen Xu and Wangchunshu Zhou and Tao Ge and Furu Wei and Ming Zhou},
+    year={2020},
+    eprint={2002.02925},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
+
 ## How to run BERT-of-Theseus
 
 ### Requirement
@@ -30,10 +43,10 @@ python ./run_glue.py \
   --per_gpu_eval_batch_size 32 \
   --learning_rate 2e-5 \
   --save_steps 50 \
-  --num_train_epochs 50 \
+  --num_train_epochs 15 \
   --output_dir /path/to/save_successor/ \
   --evaluate_during_training \
-  --replacing_rate 0.1 \
+  --replacing_rate 0.3 \
   --scheduler_type linear \
   --scheduler_linear_k 0.0006
 ```
@@ -55,10 +68,10 @@ python ./run_glue.py \
   --per_gpu_eval_batch_size 32 \
   --learning_rate 2e-5 \
   --save_steps 50 \
-  --num_train_epochs 50 \
+  --num_train_epochs 15 \
   --output_dir /path/to/save_successor/ \
   --evaluate_during_training \
-  --replacing_rate 0.7 \
+  --replacing_rate 0.5 \
   --steps_for_replacing 2500 
 ```
 For the detailed description of arguments, please refer to the source code.
