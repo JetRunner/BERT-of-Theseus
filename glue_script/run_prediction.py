@@ -130,10 +130,6 @@ def train(args, train_dataset, model, tokenizer):
 
     global_step = 0
     tr_loss, logging_loss = 0.0, 0.0
-    if args.finetune_student:
-        model.bert.encoder.finetune_student_mode()
-    else:
-        model.bert.encoder.finetune_teacher_mode()
     model.zero_grad()
     train_iterator = trange(int(args.num_train_epochs), desc="Epoch", disable=args.local_rank not in [-1, 0])
     set_seed(args)  # Added here for reproductibility (even between python 2 and 3)
@@ -359,8 +355,6 @@ def main():
                         help="The name of the task to train selected in the list: " + ", ".join(processors.keys()))
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
-    parser.add_argument("--finetune_student", action='store_true',
-                        help="Finetune the student.")
 
     ## Other parameters
     parser.add_argument("--config_name", default="", type=str,
@@ -540,10 +534,6 @@ def main():
             prefix = checkpoint.split('/')[-1] if checkpoint.find('checkpoint') != -1 else ""
 
             model = model_class.from_pretrained(checkpoint)
-            if args.finetune_student:
-                model.bert.encoder.finetune_student_mode()
-            else:
-                model.bert.encoder.finetune_teacher_mode()
             model.to(args.device)
             result = evaluate(args, model, tokenizer, prefix=prefix)
             result = dict((k + '_{}'.format(global_step), v) for k, v in result.items())
