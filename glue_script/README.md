@@ -1,6 +1,6 @@
 # GLUE Submission Script
 
-This script (by [@MichaelZhouwang](https://github.com/MichaelZhouwang)) is for predicting with [huggingface/transformers](https://github.com/huggingface/transformers) on GLUE test set. This script is adapted from the original "run_glue.py" and can be used in the same way.
+This script (by [@MichaelZhouwang](https://github.com/MichaelZhouwang)) is for predicting with [huggingface/transformers](https://github.com/huggingface/transformers) on GLUE test set. This script is adapted from the original `run_glue.py`.
 
 It helps you prepare your submission to [GLUE Leaderboard](https://gluebenchmark.com/).
 
@@ -16,3 +16,6 @@ If you find this script helpful, please kindly consider citing our paper:
     primaryClass={cs.CL}
 }
 ```
+
+## Usage
+Please first replace the `glue.py` in `src/transformers/data/processor/` by ours and then use `run_prediction.py` in the same way of `run_glue.py`.
