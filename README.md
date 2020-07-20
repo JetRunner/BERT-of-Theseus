@@ -105,4 +105,5 @@ If you'd like to contribute and add more tasks (only GLUE is available at this m
 ## Third-Party Implementations
 We list some third-party implementations from the community here. Please kindly add your implementation to this list:
 
-`Tensorflow Implementation (tested on NER)`: https://github.com/qiufengyuyi/bert-of-theseus-tf
+- `Tensorflow Implementation (tested on NER)`: https://github.com/qiufengyuyi/bert-of-theseus-tf
+- `Keras Implementation (tested on text classification)`: https://github.com/bojone/bert-of-theseus
