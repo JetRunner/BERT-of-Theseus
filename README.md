@@ -8,13 +8,20 @@ Code for paper ["BERT-of-Theseus: Compressing BERT by Progressive Module Replaci
 ## Citation
 If you use this code in your research, please cite our paper:
 ```bibtex
-@misc{xu2020bertoftheseus,
-    title={BERT-of-Theseus: Compressing BERT by Progressive Module Replacing},
-    author={Canwen Xu and Wangchunshu Zhou and Tao Ge and Furu Wei and Ming Zhou},
-    year={2020},
-    eprint={2002.02925},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{xu-etal-2020-bert,
+    title = "{BERT}-of-Theseus: Compressing {BERT} by Progressive Module Replacing",
+    author = "Xu, Canwen  and
+      Zhou, Wangchunshu  and
+      Ge, Tao  and
+      Wei, Furu  and
+      Zhou, Ming",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.633",
+    pages = "7859--7869"
 }
 ```
 
